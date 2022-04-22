@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".Login_Activity">
+
+    <ImageView
+        android:id="@+id/GuestLoginID"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/cross_sign">
+
+    </ImageView>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutFiveID"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="0dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:id="@+id/Logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/bloodpng"></ImageView>
+
+
+        <RelativeLayout
+            android:id="@+id/layoutoneID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Logo"
+            android:visibility="gone">
+
+
+            <TextView
+                android:id="@+id/dd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login To OBDS"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dd">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <EditText
+                        android:id="@+id/EmialID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_design"
+                        android:hint="Email Address"
+                        android:inputType="textEmailAddress"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:textSize="17sp">
+
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/PasswordID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_design"
+                        android:hint="Email Password"
+                        android:inputType="textPassword"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:textSize="17sp">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/LoginButtonID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/login_buttondesign"
+                        android:text="Sign In"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp">
+
+                    </Button>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutThreeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layoutTwoID"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone">
+
+
+        <Button
+            android:id="@+id/PhoneLoginID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/phone_signin_design"
+            android:text="Phone Login"
+            android:textColor="@android:color/white">
+
+        </Button>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layoutTwoID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/LoginRegisterTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Account"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/ForgotPasswordID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Forgot Password"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="14sp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="31dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginRight="99dp"
+        android:layout_marginBottom="261dp"
+        android:text="Online Blood Donation System"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="14sp">
+
+    </TextView>
+
+</RelativeLayout>

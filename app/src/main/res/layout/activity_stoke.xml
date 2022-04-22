@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.obds.StokeActivity"
+    android:background="@drawable/iback">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="@drawable/headerlayout">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="45dp"
+                android:src="@drawable/blood_donation"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="47dp"
+                android:layout_toRightOf="@id/image"
+                android:text="Our Blood Stock"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="20dp">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/layoutone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:id="@+id/layoutoneID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FFF0F0"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/imagee"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/abplus">
+
+                                        <TextView
+                                            android:id="@+id/imaged"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="AB+"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/abpositiveID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/imagee"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#EEEEEE"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/image2"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/abpositive">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="AB-"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/abnegativeID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/image2"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/onetwoID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutoneID"
+                        android:layout_marginTop="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#D5C2FF"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/imagee1"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/blue_background">
+
+                                        <TextView
+                                            android:id="@+id/imaged2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="B+"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/bpostiveID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/imagee1"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#D7F9FF"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/image3"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/ab_neg">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="B-"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/bnegativeID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/image3"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/onethree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/onetwoID"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#E0FFE1"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/imagee"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/aplus">
+
+                                        <TextView
+                                            android:id="@+id/imaged"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="A+"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/apositiveID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/imagee"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#BED5D2"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/image2"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/aminus">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="A-"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/anegativeID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/image2"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/onethree"
+                        android:layout_marginTop="5dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FFC9B9"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/imagee"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/oplus">
+
+                                        <TextView
+                                            android:id="@+id/imaged"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="O+"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/opositiveId"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/imagee"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="7dp"
+                                android:layout_weight="1"
+                                android:elevation="5dp"
+                                app:cardCornerRadius="7dp">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#FFE8B0"
+                                    android:gravity="center">
+
+                                    <RelativeLayout
+                                        android:id="@+id/image2"
+                                        android:layout_width="70dp"
+                                        android:layout_height="70dp"
+                                        android:background="@drawable/oneg">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_centerVertical="true"
+                                            android:text="O-"
+                                            android:textColor="@android:color/white"
+                                            android:textSize="25dp" />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/onegativeID"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/image2"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Total 0"
+                                        android:textColor="@android:color/black"
+                                        android:textSize="18sp" />
+
+                                </RelativeLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
